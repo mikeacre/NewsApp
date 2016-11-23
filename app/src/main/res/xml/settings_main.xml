@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/settings_title">
+
+    <EditTextPreference
+        android:defaultValue="@string/subject_default"
+        android:inputType="text"
+        android:key="@string/news_subject_key"
+        android:selectAllOnFocus="true"
+        android:title="@string/news_subject_title"
+        />
+    <CheckBoxPreference
+        android:defaultValue="@string/exact_match_default"
+        android:key="@string/exact_match_key"
+        android:title="@string/exact_match_title"
+        android:summary="@string/exact_match_summary" />
+    <ListPreference
+        android:defaultValue="@string/andor_value_default"
+        android:entries="@array/andor_value_options"
+        android:entryValues="@array/andor_value_options"
+        android:key="@string/andor_value_key"
+        android:title="@string/andor_value_title"
+        />
+    <EditTextPreference
+        android:defaultValue="@string/second_search_subject_default"
+        android:inputType="text"
+        android:key="@string/second_search_subject_key"
+        android:selectAllOnFocus="true"
+        android:title="@string/second_search_subject_title"
+        />
+
+
+</PreferenceScreen>
